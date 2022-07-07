@@ -1,0 +1,56 @@
+global_info:
+    version : "0.3"
+    sensor : "imx327_mipi"
+    img_resolution : "1920x1080"
+    group_num : 4
+    md_item : 1
+    c2y_item : 2
+    is_plain_model : 0
+
+nn_group0:
+    md :
+        file : "./models/nn_30_36_md.bin"
+        input_resolution : "270x480"
+    c2y_r :
+        file : "./models/nn_30_36_R.bin"
+        input_resolution : "360x480"
+    c2y_l :
+        file : "./models/nn_30_36_L.bin"
+        input_resolution : "270x480"
+    gain_range : "30_36"
+
+nn_group1:
+    md :
+        file : "./models/nn_36_42_md.bin"
+        input_resolution : "270x480"
+    c2y_r :
+        file : "./models/nn_36_42_R.bin"
+        input_resolution : "480x480"
+    c2y_l :
+        file : "./models/nn_36_42_L.bin"
+        input_resolution : "270x480"
+    gain_range : "36_42"
+
+nn_group2:
+    md :
+        file : "./models/nn_42_48_md.bin"
+        input_resolution : "270x480"
+    c2y_r :
+        file : "./models/nn_42_48_R.bin"
+        input_resolution : "320x480"
+    c2y_l :
+        file : "./models/nn_42_48_L.bin"
+        input_resolution : "420x480"
+    gain_range : "42_48"
+
+nn_group3:
+    md :
+        file : "./models/nn_48_54_md.bin"
+        input_resolution : "320x480"
+    c2y_r :
+        file : "./models/nn_48_54_R.bin"
+        input_resolution : "270x480"
+    c2y_l :
+        file : "./models/nn_48_54_L.bin"
+        input_resolution : "270x480"
+    gain_range : "48_54"
